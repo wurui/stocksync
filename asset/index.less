@@ -1,0 +1,52 @@
+.oxmod-stocksync {
+  /* CSS */
+  .maintable {
+    width: 100%;
+    td {
+      font-size: 16px;
+      border-bottom: solid 1px #ccc;
+
+      padding: 2px 5px;
+      height: 34px;
+    }
+
+    tr:nth-child(2n-1) {
+      td {
+        background-color: #eee;
+      }
+    }
+    tr.selected > td {
+      background-color: rgba(100, 100, 120, .8);
+      color: #fff;
+    }
+    thead {
+      th {
+        font-size: 14px;
+        border-bottom: solid 1px #999;
+        border-left: solid 1px #999;
+        background-color: #999;
+        line-height: 2;
+      }
+    }
+    td {
+      line-height: 1.6;
+    }
+  }
+  .percent {
+    display: inline-block;
+    min-width: 70px;
+    height: 24px;
+    color: #fff;
+    font-style: normal;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
+  }
+  .positive {
+    background-color: #f00;
+  }
+  .negative {
+    background-color: #0c0;
+  }
+}

@@ -1,35 +1,51 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="demo.xsl"?>
 <root>
-  <env>
-    <domain>local</domain>
-  </env>
-  <p>
-    <title>demo page</title>
-    <desc>this is deme page</desc>
-    <owner>openxsl</owner>
-    <icon>//oxm1.cc/img/app_default.png</icon>
-  </p>
-  <data>
-        <stock-analysis>
-        <i>
-            <symbol>
-                tough laptop
-            </symbol>
-            <close>
-                0.25
-            </close>
-            <med>
-                0.01
-            </med>
-            <avg>
-                725.36
-            </avg>
-            <lastDate>
-                Tue Jan 17 2017
-            </lastDate>
-        </i>
-    </stock-analysis>
-  </data>
+    <env>
+        <domain>local</domain>
+    </env>
+    <login>
+        <uid>git/wurui</uid>
+    </login>
+    <p>
+        <title>demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+        <mystock-analysis>
+            <i>
+                <symbol>NVO</symbol>
+                <close>35.73</close>
+                <med>51.09</med>
+                <lastDate>20170112</lastDate>
+            </i>
+            <i>
+                <symbol>FMX</symbol>
+                <close>75.00</close>
+                <med>91.25</med>
+                <lastDate>20170112</lastDate>
+            </i>
+            <i>
+                <symbol>BUD</symbol>
+                <close>105.00</close>
+                <med>123.94</med>
+                <lastDate>20170112</lastDate>
+            </i>
+            <i>
+                <symbol>GILD</symbol>
+                <close>73.17</close>
+                <med>82.29</med>
+                <lastDate>20170112</lastDate>
+            </i>
+            <i>
+                <symbol>BMY</symbol>
+                <close>56.00</close>
+                <med>62</med>
+                <lastDate>20170112</lastDate>
+            </i>
+        </mystock-analysis>
+    </data>
 
 </root>
