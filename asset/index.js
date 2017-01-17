@@ -1,5 +1,5 @@
 define(['oxjs'], function (OX) {
-    var targetDS = '/stock-analysis@';
+    var targetDS = '/stock-analysis@2587e07e58e56c13341dc76ac';
     //targetDS='/stock-analysis@'
     OX.config({devHost:'//local.openxsl.com'})
 
@@ -83,7 +83,7 @@ define(['oxjs'], function (OX) {
         init: function ($mod) {
 
 
-            targetDS+=$mod.attr('data-dsid');
+            //targetDS+=$mod.attr('data-dsid');
 
             var lastFocusNode, cls = 'selected';
             var qs = $mod.attr('data-qs'),
