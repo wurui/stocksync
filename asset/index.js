@@ -1,7 +1,7 @@
 define(['oxjs'], function (OX) {
     var targetDS = '/mystock-analysis@2587dcf6c630406d73ce62959';
     //targetDS='/mystock-analysis@2587dd26433e5da9b76d1aced'
-    OX.config({devHost:'//local.openxsl.com'})
+    //OX.config({devHost:'//local.openxsl.com'})
     var uid;
     var syncRemote = function (data) {
             //2587dc2a8630406d73ce62957
@@ -49,18 +49,20 @@ define(['oxjs'], function (OX) {
                 symbols.push(symbol);
                 domCache[symbol] = tr;
             }
-            OX.getJSON('http://momofox.com:8000/analyze/querymaybelow?symbols=' + symbols.join(','), function (r) {
+            if(symbols.length) {
+                OX.getJSON('http://momofox.com:8000/analyze/querymaybelow?symbols=' + symbols.join(','), function (r) {
 
-                //console.log(r);
+                    //console.log(r);
 
-                for (var i = 0, n; n = r[i++];) {
-                    var tr = domCache[n.symbol];
-                    filltr(tr, n)
-                }
-                syncRemote(r);
+                    for (var i = 0, n; n = r[i++];) {
+                        var tr = domCache[n.symbol];
+                        filltr(tr, n)
+                    }
+                    syncRemote(r);
 
 
-            });
+                });
+            }
 
 
         },
