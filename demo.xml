@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<root>
+  <env>
+    <domain>local</domain>
+  </env>
+  <p>
+    <title>demo page</title>
+    <desc>this is deme page</desc>
+    <owner>openxsl</owner>
+    <icon>//oxm1.cc/img/app_default.png</icon>
+  </p>
+  <data>
+        <stock-analysis>
+        <i>
+            <symbol>
+                tough laptop
+            </symbol>
+            <close>
+                0.25
+            </close>
+            <med>
+                0.01
+            </med>
+            <avg>
+                725.36
+            </avg>
+            <lastDate>
+                Tue Jan 17 2017
+            </lastDate>
+        </i>
+    </stock-analysis>
+  </data>
+
+</root>
