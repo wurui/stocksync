@@ -14,7 +14,7 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-        <mystock-analysis>
+        <stock-analysis ADAPTERID="2587df42dca0b15ab810cc602">
             <i>
                 <symbol>NVO</symbol>
                 <close>35.73</close>
@@ -45,7 +45,7 @@
                 <med>62</med>
                 <lastDate>20170112</lastDate>
             </i>
-        </mystock-analysis>
+        </stock-analysis>
     </data>
 
 </root>

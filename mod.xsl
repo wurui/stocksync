@@ -13,11 +13,11 @@
     <xsl:template match="/root" name="wurui.stocksync">
         <xsl:param name="qs">symbol</xsl:param>
         <!-- className 'J_OXMod' required  -->
-        <div class="J_OXMod oxmod-stocksync" data-uid="{login/uid}" ox-mod="stocksync" data-qs="{$qs}">
+        <div class="J_OXMod oxmod-stocksync" ox-mod="stocksync" data-dsid="{data/stock-analysis/attribute::ADAPTERID}" data-qs="{$qs}">
 
             <table cellpadding="0" cellspacing="0" class="maintable">
                 <tbody>
-                    <xsl:for-each select="data/mystock-analysis/i">
+                    <xsl:for-each select="data/stock-analysis/i">
                         <tr data-href="{normalize-space(symbol)}" data-date="{lastDate}">
                             <td data-key="symbol">
                                 <xsl:value-of select="symbol"/>
