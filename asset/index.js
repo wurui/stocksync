@@ -1,5 +1,5 @@
 define(['oxjs'], function (OX) {
-    var targetDS = '/stock-analysis@2587e07e58e56c13341dc76ac';
+    var targetDS = '/stock-analysis@258805cd7dc3804a64f61504e';
     //targetDS='/stock-analysis@'
     OX.config({devHost:'//local.openxsl.com'})
 
